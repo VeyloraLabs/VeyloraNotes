@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=VeyloraNotes
+GenericName=Notepad
+Comment=A notepad with text tools and a GitHub-style Markdown preview
+Exec=veyloranotes %F
+Icon=veyloranotes
+Terminal=false
+Categories=Utility;TextEditor;Office;
+MimeType=text/plain;text/markdown;text/x-markdown;
+Keywords=notes;notepad;markdown;editor;text;
+StartupWMClass=VeyloraNotes
