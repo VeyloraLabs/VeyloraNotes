@@ -42,9 +42,6 @@ searchable command palette, multi-tab editing, regular-expression replace, line 
 calculator, a diff against your clipboard… and when the note is Markdown you can see it **rendered like on GitHub**, with
 images, tables, task lists and highlighted code.
 
-It uses the same look as [VeyloraDevice](https://github.com/VeyloraLabs/VeyloraDevice): a dark theme with the Veylora
-green accent, Fluent widgets and an instant English / Spanish switch.
-
 ---
 
 ## 📸 Screenshots
