@@ -11,7 +11,7 @@
   <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-00f49f?style=flat-square">
   <img alt="Qt for Python" src="https://img.shields.io/badge/Qt-PySide6-00f49f?style=flat-square">
   <img alt="Languages" src="https://img.shields.io/badge/languages-EN%20%7C%20ES-00f49f?style=flat-square">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-00f49f?style=flat-square">
+  <img alt="License" src="https://img.shields.io/badge/license-GPL--3.0-00f49f?style=flat-square">
 </p>
 
 **Made with 💚 in Andalusia, Spain.**
@@ -266,11 +266,12 @@ fails on any exception.
 
 ## 📄 License
 
-VeyloraNotes is released under the [MIT License](LICENSE).
+VeyloraNotes is released under the [GNU General Public License v3.0](LICENSE).
+The source code can be read, modified and redistributed under its terms.
 
-The interface uses [PySide6-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets), which is distributed under
-its own license terms (GPLv3 for non-commercial use). Check [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before
-redistributing builds.
+The interface uses [PySide6-Fluent-Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets), which has separate
+non-commercial and commercial licensing terms. Review [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and each
+dependency's terms before redistributing or using the application commercially.
 
 ---
 

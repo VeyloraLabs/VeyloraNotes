@@ -216,7 +216,7 @@ Name:           $PKG_NAME
 Version:        $VERSION
 Release:        1
 Summary:        $SUMMARY
-License:        MIT
+License:        GPL-3.0-only
 URL:            $HOMEPAGE
 BuildArch:      $RPM_ARCH
 AutoReqProv:    no
@@ -256,13 +256,15 @@ if has_target appimage; then
     log "Building the AppImage"
     APPDIR="$WORK/$APP_NAME.AppDir"
     mkdir -p "$APPDIR/usr/bin" "$APPDIR/usr/share/applications" \
-        "$APPDIR/usr/share/icons/hicolor/512x512/apps" "$APPDIR/usr/share/icons/hicolor/scalable/apps"
+        "$APPDIR/usr/share/icons/hicolor/512x512/apps" "$APPDIR/usr/share/icons/hicolor/scalable/apps" \
+        "$APPDIR/usr/share/doc/$PKG_NAME"
     cp -a "$BUNDLE/." "$APPDIR/usr/bin/"
     cp "$DESKTOP" "$APPDIR/$PKG_NAME.desktop"
     cp "$DESKTOP" "$APPDIR/usr/share/applications/$PKG_NAME.desktop"
     cp "$ICON_PNG" "$APPDIR/$PKG_NAME.png"
     cp "$ICON_PNG" "$APPDIR/usr/share/icons/hicolor/512x512/apps/$PKG_NAME.png"
     cp "$ICON_SVG" "$APPDIR/usr/share/icons/hicolor/scalable/apps/$PKG_NAME.svg"
+    cp "$ROOT/LICENSE" "$ROOT/THIRD_PARTY_NOTICES.md" "$APPDIR/usr/share/doc/$PKG_NAME/"
     cat >"$APPDIR/AppRun" <<'APPRUN'
 #!/bin/sh
 HERE="$(dirname "$(readlink -f "$0")")"
